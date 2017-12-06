@@ -1,1 +1,285 @@
-/* Los estilos de tu proyecto */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.link-nav {
+  color: rgb(126, 126, 126);
+  margin-right: 3em;
+  font-size: 1.3em;
+}
+
+#nav {
+  padding: 2.5em;
+}
+
+#logo {
+  padding-left: 4em;
+}
+
+#hamburger {
+  color: #6a6565;
+  border: 1px solid #6a6565;
+  border-radius: 5px;
+  width: 45px;
+  padding: 1em;
+}
+
+#back-taxi {
+  background-image: url(../assets/images/taxi.jpg);
+  background-size: cover;
+  background-position: 100% 93%;
+  background-repeat: no-repeat;
+  height: auto;
+  width: 100%;
+}
+
+#aside {
+  width: 100%;
+  height: auto;
+  background-color: #F7B617;
+  color: #fff;
+  margin-top: 7em;
+  margin-bottom: 7em;
+  padding: 3em;
+}
+
+#aside p {
+  padding: 0;
+  margin: 0;
+  font-size: 2.5em;
+  padding-left: 1em;
+  font-weight: 400;
+}
+
+p#enjoy {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+p#time {
+  padding-top: 0;
+  margin-top: -0.4em;
+  padding-left: 0;
+}
+
+#logoWhite {
+  display: inline-block;
+  width: 7.8em;
+  height: 2em;
+  margin-top: -0.6em;
+}
+
+#travel {
+  display: inline-block;
+  font-size: 2em;
+  padding-right: 0.6em;
+  padding-top: 1em;
+}
+
+.btn-aside {
+  color: #292727;
+  background-color: #fff;
+  font-weight: bold;
+  font-size: 1.3em;
+  border: none;
+  padding: 0.5em;
+  border-radius: 5px;
+  display: block;
+  margin-top: 1em;
+}
+
+p#o-bien {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+#o-bien::before {
+  content: "________________________________";
+  padding-right: 8em;
+  color: #fff;
+  font-size: 0.5em;
+}
+
+#o-bien::after {
+  content: "________________________________";
+  padding-left: 7em;
+  color: #fff;
+  font-size: 0.5em;
+}
+
+#start-dr, #start-dr-logo {
+  display: inline-block;
+}
+
+.yellow {
+  height: auto;
+  width: 100%;
+  color: #fff;
+  background-color: #F7B617;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+#download-app {
+  border: 1px solid #fff;
+  padding: 3em;
+  width: auto;
+}
+
+#pa-down {
+  width: 29em;
+  height: auto;
+  margin-left: 10em;
+  margin-right: 10em;
+}
+
+#img-iphone, #pa-down {
+  display: inline-block;
+}
+
+#pa-down h1 {
+  padding-bottom: 1em;
+}
+
+#pa-down p {
+  font-size: 1.7em;
+}
+
+#faster {
+  padding-left: 1em;
+  padding-top: 32em;
+}
+
+#conduce {
+  background-image: url(../assets/images/conduce.jpg);
+  background-size: cover;
+  background-position: 100% 60%;
+  background-repeat: no-repeat;
+  height: 32em;
+  color: #fff;
+}
+
+#drive {
+  width: 100%;
+  height: 32em;
+  padding: 3em;
+  padding-top: 10em;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#drive button {
+  background-color: #F7B617;
+  padding: 0.5em;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+#drive-h1 {
+  font-size: 2.2em;
+}
+
+#drive-p {
+  font-size: 1.4em;
+  width: 20em;
+  padding-right: 2em;
+}
+
+#map-sect {
+  padding: 6em;
+  color: #fff;
+}
+
+::placeholder {
+  color: #fff;
+}
+
+#map {
+  border: 1px solid #fff;
+  padding: 0.5em;
+  object-fit: cover;
+}
+
+input {
+  background-color: transparent;
+  padding: 0.5em;
+  padding-right: 5em;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #fff;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  margin-left: 2em;
+}
+
+#ruta-btn {
+  color: #000;
+  background-color: #fff;
+  padding: 1em;
+  border: none;
+  font-weight: bold;
+  margin-left: 6em;
+}
+
+#footer {
+  background-color: #2B2B2B;
+  color: #fff;
+  width: 100%;
+  height: auto;
+  padding: 6em;
+}
+
+.fa {
+  color: #fff;
+  display: inline-block;
+  padding: 0.3em;
+  margin-top: 25em;
+}
+
+.fot1 {
+  padding: 0.5em;
+}
+
+.app-img {
+  padding: 0.5em;
+}
+
+#appstore {
+  margin-top: 15em;
+}
+
+@media (max-width: 450px) {
+  #map-sect {
+    padding: 3em;
+  }
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+  #map {
+    margin-top: 2em;
+  }
+  .yellow, #footer {
+    padding: 2em;
+  }
+  .fa, #appstore {
+    margin-top: 2em;
+  }
+  .app-img {
+    width: 150px;
+    height: 60px;
+  }
+}
