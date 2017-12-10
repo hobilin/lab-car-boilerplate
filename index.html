@@ -12,6 +12,236 @@
 </head>
 
 <body>
+  <!--MODAL INICIAR SECIÓN-->
+
+  <!-- BEGIN # MODAL LOGIN -->
+  <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" align="center">
+
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+					</button>
+          <img class="img-circle" id="img_logo" src="assets/images/login.png">
+          <hr>
+        </div>
+
+        <!-- Begin # DIV Form -->
+        <div id="div-forms">
+
+          <!-- Begin # Login Form -->
+          <form id="login-form">
+            <div class="modal-body">
+
+              <input id="login_username" class="form-control" type="text" placeholder="Username" required>
+              <input id="login_password" class="form-control" type="password" placeholder="Password" required>
+
+            </div>
+            <div class="modal-footer">
+              <div>
+                <button type="submit" class="btn btn-all btn-lg btn-block">Login</button>
+              </div>
+              <div>
+                <span>Forgot Password?</span>
+                <button id="login_lost_btn" type="button" class="btn btn-link">Click Here</button>
+
+              </div>
+            </div>
+          </form>
+          <!-- End # Login Form -->
+
+          <!-- Begin | Lost Password Form -->
+          <form id="lost-form" style="display:none;">
+            <div class="modal-body">
+
+              <input id="lost_email" class="form-control" type="text" placeholder="E-Mail" required>
+            </div>
+            <div class="modal-footer">
+              <div>
+                <button type="submit" class="btn btn-all btn-lg btn-block">Send</button>
+              </div>
+              <div>
+                <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
+                <button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
+              </div>
+            </div>
+          </form>
+          <!-- End | Lost Password Form -->
+
+          <!-- Begin | Register Form -->
+          <form id="register-form" style="display:none;">
+            <div class="modal-body">
+              <div id="div-register-msg">
+                <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
+                <span id="text-register-msg">Register an account.</span>
+              </div>
+              <input id="register_username" class="form-control" type="text" placeholder="Username" required>
+              <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
+              <input id="register_password" class="form-control" type="password" placeholder="Password" required>
+            </div>
+            <div class="modal-footer">
+              <div>
+                <button type="submit" class="btn btn-all btn-lg btn-block">Register</button>
+              </div>
+              <div>
+                <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
+                <button id="register_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+              </div>
+            </div>
+          </form>
+          <!-- End | Register Form -->
+
+        </div>
+        <!-- End # DIV Form -->
+
+      </div>
+    </div>
+  </div>
+  <!-- FIN MODAL LOGIN -->
+
+  <!-- INICIO MODAL REGISTER -->
+  <div class="modal fade" id="register-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+      <div class="modal-content modal-register">
+        <div class="modal-header" align="center">
+
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+					</button>
+        </div>
+        <div <a href="#" class="btn btn-black btn-block btn-lg">¿Ya tienes una cuenta?</a>
+        </div>
+        <p id="new-acc">O CREA UNA CUENTA NUEVA</p>
+        <!-- Begin # DIV Form -->
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="form-group">
+              <input type="text" name="first_name" id="first_name" class="form-control input-lg" placeholder="Nombre" tabindex="1">
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="form-group">
+              <input type="text" name="last_name" id="last_name" class="form-control input-lg" placeholder="Apellido" tabindex="2">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="text" name="display_name" id="display_name" class="form-control input-lg" placeholder="Correo Electronico: ejemplo@correo.mx " tabindex="3">
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Teléfono" tabindex="4">
+        </div>
+
+
+        <div class="form-group">
+          <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Contraseña" tabindex="5">
+        </div>
+
+
+        <div class="form-group">
+          <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-lg" placeholder="Ciudad" tabindex="6">
+        </div>
+
+        <div class="form-group">
+          <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-lg" placeholder="(Opcional) Código de invitacion" tabindex="6">
+        </div>
+
+
+
+
+
+        <div <input type="submit" value="Register" class="btn btn-chevron btn-block btn-lg" tabindex="7">¿Cómo te enteraste de nosotros? <span class="glyphicon glyphicon-chevron-down"></span></div>
+        <div <a href="#" class="btn btn-all btn-block btn-lg">Sign In</a>
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+
+  </div>
+  </div>
+  </div>
+  <!-- FIN MODAL REGISTER -->
+
+
+  <!-- INICIO MODAL DRIVER -->
+  <div class="modal fade" id="driver-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+      <div class="modal-content modal-register">
+        <div class="modal-header" align="center">
+
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+					</button>
+        </div>
+        <!-- Begin # DIV Form -->
+
+
+        <div class="form-group select-cont">
+          <p class="title-select">¿Tienes vehículo de 4 puertas?</p>
+          <select class="input-lg" id="select">
+ <option class="opt" value="0">Seleccione una opción</option>
+ <option class="opt" value="Sí">Sí</option>
+ <option class="opt" value="No">No</option>
+</select>
+        </div>
+        <div class="form-group select-cont">
+          <p class="title-select">Marca</p>
+          <select class="input-lg" id="select">
+ <option class="opt" value="0">Elige la marca del vehículo</option>
+ <option class="opt" value="Toyota">Toyota</option>
+ <option class="opt" value="Susuki">Susuki</option>
+</select>
+          <h6>¿No ves tu vehículo en la lista? Envía un correo electrónico a <a href="">manager@labcar.com</a></h6>
+        </div>
+
+
+        <div class="form-group select-cont">
+          <p class="title-select">Modelo</p>
+          <select class="input-lg" id="select">
+ <option class="opt" value="0">Elige el modelo del vehículo</option>
+ <option class="opt" value="modelo1">Modelo 1</option>
+ <option class="opt" value="modelo2">Modelo 2</option>
+</select>
+        </div>
+
+        <div class="form-group select-cont">
+          <p class="title-select">Año</p>
+          <select class="input-lg" id="select">
+ <option class="opt" value="0">Elige el año del vehículo</option>
+ <option class="opt" value="2016">2016</option>
+ <option class="opt" value="2017">2017</option>
+</select>
+        </div>
+
+        <div class="form-group">
+          <p class="title-select">Número de la matrícula</p>
+          <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-lg" placeholder="Número de la matrícula" tabindex="6">
+          <h5>La información de la matrícula ayuda a los clientes a identificar tu vehículo.</h5>
+        </div>
+
+
+
+
+
+        <div <a href="#" class="btn btn-all btn-block btn-lg">Enviar</a>
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+
+  </div>
+  </div>
+  </div>
+  <!-- FIN MODAL DRIVER -->
+
+
   <!-- BARRA DE NAVEGACIÓN -->
   <nav class="navbar" id="nav">
     <div class="container-fluid">
@@ -32,7 +262,7 @@
         <ul class="nav navbar-nav navbar-right">
           <li><a class="link-nav  visible-lg hidden-md hidden-sm hidden-xs" href="#">Viaja</a></li>
           <li><a class="link-nav  visible-lg hidden-md hidden-sm hidden-xs" href="#">Conduce</a></li>
-          <li><a class="link-nav  visible-lg hidden-md hidden-sm hidden-xs" href="#">Inicia sesión</a></li>
+          <li><a class="link-nav  visible-lg hidden-md hidden-sm hidden-xs" href="#" data-toggle="modal" data-target="#login-modal">Inicia sesión</a></li>
         </ul>
       </div>
       <!-- /.navbar-collapse -->
@@ -51,7 +281,7 @@
           <p id="time" class="hidden-sm hidden-xs hidden-md">Eres el dueño de tu tiempo</p>
           <h2 id="travel" class="hidden-sm hidden-xs hidden-md">Viaja con</h2>
           <img class="hidden-sm hidden-xs hidden-md" id="logoWhite" src="assets/images/logoBlanco.png" alt="">
-          <button class="hidden-sm hidden-xs hidden-md btn-aside" type="button" name="button">REGÍSTRATE</button>
+          <button class="hidden-sm hidden-xs hidden-md btn-aside" type="button" name="button" data-toggle="modal" data-target="#register-modal">REGÍSTRATE</button>
           <p class="hidden-sm hidden-xs hidden-md" id="o-bien">O bien</p>
           <button class="hidden-sm hidden-xs hidden-md btn-aside" type="button" name="button">Conviértete en un conductor</button>
         </div>
@@ -89,7 +319,7 @@
         <div class="row">
           <p id="drive-p">LabCar es una opción flexible para alcanzar tus metas financieras.</p>
         </div>
-        <div class="row"><button type="button" name="button">Conviértete en conductor</button></div>
+        <div class="row"><button data-toggle="modal" data-target="#driver-modal" type="button" name="button">Conviértete en conductor</button></div>
       </div>
     </div>
   </section>
@@ -108,14 +338,14 @@
         <div class="row">
           <form class="" action="index.html" method="post">
             <img src="assets/images/shape.png" alt="">
-            <input type="text" name="" value="" placeholder="Ingrese su punto de partida">
+            <input class="input" type="text" name="" value="" placeholder="Ingrese su punto de partida">
           </form>
         </div>
 
         <div class="row">
           <form class="" action="index.html" method="post">
             <img src="assets/images/shape2.png" alt="">
-            <input type="text" name="" value="" placeholder="Ingrese su destino">
+            <input class="input" type="text" name="" value="" placeholder="Ingrese su destino">
           </form>
         </div>
         <div class="row">
@@ -187,6 +417,7 @@
   </section>
 
   <script src="bootstrap/js/jquery.js" charset="utf-8"></script>
+  <script src="js/app.js" charset="utf-8"></script>
   <script src="bootstrap/js/bootstrap.min.js" charset="utf-8"></script>
 </body>
 
